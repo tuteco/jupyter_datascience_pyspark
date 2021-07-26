@@ -16,16 +16,18 @@ We have extended the image for use with AWS and incuded some Jupyter Lab extensi
 - [boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) - python library for AWS api 
 - [s3fs](https://s3fs.readthedocs.io/en/latest/) - simplified interface for AWS S3
 - [plotly](https://github.com/plotly/plotly.py) - interactive, open-source, and browser-based graphing library
+- [psycopg2-binary](https://pypi.org/project/psycopg2-binary/) - PostgreSQL database adapter
 
 ## Jupyter extensions added
 - [Variable Inspector](https://github.com/lckr/jupyterlab-variableInspector)
 - [Code Formatter](https://jupyterlab-code-formatter.readthedocs.io/en/latest/) - pretty format your python code
     - [iSort](https://pypi.org/project/isort/) - required for code formatter
-- [Jedi Langauge Server](https://github.com/pappasam/jedi-language-server) - for code completion
 - [DrawIO](https://github.com/QuantStack/jupyterlab-drawio) - create DrawIO images
 - [Language Server protocol implementation](https://github.com/krassowski/jupyterlab-lsp) - code completion functionality
+  - [Jedi Langauge Server](https://github.com/pappasam/jedi-language-server) - for code completion
 - [Chart Editor](https://github.com/plotly/jupyterlab-chart-editor) - easy work with plotly charts
   - jupyterlab-plotly - required for chart editor to work
+- [ipython-sql](https://github.com/catherinedevlin/ipython-sql)  -run sql directly in a notebook cell
 
 ## Image local build
 we use [python invoke](https://www.pyinvoke.org) instead of unix make. 
