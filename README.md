@@ -14,14 +14,19 @@ We have extended the image for use with AWS and incuded some Jupyter Lab extensi
 
 ## Python Packages added
 - [boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) - python library for AWS api 
+- [faker](https://faker.readthedocs.io/en/stable/index.html) - create fake data
+  - [faker_music](https://pypi.org/project/faker_music/) - faker provider for music generes and instruments
+  - [faker-vehicle](https://pypi.org/project/faker-vehicle/) - faker provider for vehicle related data
 - [s3fs](https://s3fs.readthedocs.io/en/latest/) - simplified interface for AWS S3
 - [plotly](https://github.com/plotly/plotly.py) - interactive, open-source, and browser-based graphing library
 - [psycopg2-binary](https://pypi.org/project/psycopg2-binary/) - PostgreSQL database adapter
 
 ## Jupyter extensions added
+- [spellchecker](https://github.com/jupyterlab-contrib/spellchecker) - spell checker for English, French, German, + more
 - [Variable Inspector](https://github.com/lckr/jupyterlab-variableInspector)
 - [Code Formatter](https://jupyterlab-code-formatter.readthedocs.io/en/latest/) - pretty format your python code
     - [iSort](https://pypi.org/project/isort/) - required for code formatter
+    - [black](https://black.readthedocs.io/en/stable/index.html) - the actual code formatter used
 - [DrawIO](https://github.com/QuantStack/jupyterlab-drawio) - create DrawIO images
 - [Language Server protocol implementation](https://github.com/krassowski/jupyterlab-lsp) - code completion functionality
   - [Jedi Langauge Server](https://github.com/pappasam/jedi-language-server) - for code completion
