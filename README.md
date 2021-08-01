@@ -47,6 +47,3 @@ invoke build-local
 
 The result is the tuteco/jupyter_datascience_pyspark:latest-dev container image.
 Be aware that the local build has the tag "latest-dev".
-
-
-
