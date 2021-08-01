@@ -10,7 +10,9 @@
 ```
 Base for this docker image is the [jupyter-pyspark-notebook](https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#jupyter-pyspark-notebook)
 
-We have extended the image for use with AWS and incuded some Jupyter Lab extension already:
+We have extended the image for use with AWS and included some Jupyter Lab extension already.
+Check out our [cookiecutter template](https://github.com/tuteco/cookiecutter-jupyter-aws-docker) to get a jump start, 
+including some instructional examples.
 
 ## Python Packages added
 - [boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) - python library for AWS api 
@@ -27,7 +29,7 @@ We have extended the image for use with AWS and incuded some Jupyter Lab extensi
 - [Code Formatter](https://jupyterlab-code-formatter.readthedocs.io/en/latest/) - pretty format your python code
     - [iSort](https://pypi.org/project/isort/) - required for code formatter
     - [black](https://black.readthedocs.io/en/stable/index.html) - the actual code formatter used
-- [DrawIO](https://github.com/QuantStack/jupyterlab-drawio) - create DrawIO images
+- [IPyDrawiO](https://ipydrawio.readthedocs.io/en/stable/) - create DrawIO images
 - [Language Server protocol implementation](https://github.com/krassowski/jupyterlab-lsp) - code completion functionality
   - [Jedi Langauge Server](https://github.com/pappasam/jedi-language-server) - for code completion
 - [Chart Editor](https://github.com/plotly/jupyterlab-chart-editor) - easy work with plotly charts
