@@ -1,5 +1,5 @@
 ---
-branch: main
+branch: "main"
 plugins:
   - "@semantic-release/changelog"
   - "@semantic-release/git"
