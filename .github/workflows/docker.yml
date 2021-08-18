@@ -48,7 +48,7 @@ jobs:
             @semantic-release/github
             @semantic-release/changelog
         env:
-          - GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
       - name: release digest
         if: steps.semantic.outputs.new_release_published == 'true'
