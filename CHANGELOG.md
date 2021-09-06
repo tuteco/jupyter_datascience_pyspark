@@ -1,3 +1,11 @@
+## [1.1.3](https://github.com/tuteco/jupyter_datascience_pyspark/compare/v1.1.2...v1.1.3) (2021-09-06)
+
+
+### Fix
+
+* new workflow version ([0035f7d](https://github.com/tuteco/jupyter_datascience_pyspark/commit/0035f7d3a3f3248ad011e481845b7caa516310b1))
+* updated workflow trigger ([06ccff9](https://github.com/tuteco/jupyter_datascience_pyspark/commit/06ccff9fa3e8337d7776342a333a4b27012fe989))
+
 ## [1.1.2](https://github.com/tuteco/jupyter_datascience_pyspark/compare/v1.1.1...v1.1.2) (2021-09-06)
 
 
