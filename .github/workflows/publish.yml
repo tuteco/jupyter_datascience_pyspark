@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - main
+    tags:
+      - 'v*'
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -10,26 +12,6 @@ jobs:
 
       - name: Check Out Repo
         uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-
-      - name: Semantic Release
-        id: semantic
-        uses: cycjimmy/semantic-release-action@v2
-        with:
-          semantic_version: 16
-          extra_plugins: |
-            @semantic-release/changelog
-            @semantic-release/git
-            conventional-changelog-eslint
-          branches: |
-            ['main']
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-
-      - name: release digest
-        if: steps.semantic.outputs.new_release_published == 'true'
-        run: echo ${{ steps.semantic.outputs.new_release_version }}
 
       - name: Docker meta
         id: meta
