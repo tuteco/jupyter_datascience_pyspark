@@ -1,8 +1,6 @@
-name: Release to Docker Hub
+name: Publish release to Docker Hub
 on:
   create:
-    branches:
-      - main
     tags:
       - 'v*'
 jobs:
