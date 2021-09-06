@@ -1,6 +1,6 @@
 name: CI to Docker Hub
 on:
-  pull_request:
+  push:
     branches:
       - release
 jobs:
