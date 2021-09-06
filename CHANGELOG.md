@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/tuteco/jupyter_datascience_pyspark/compare/v1.1.0...v1.1.1) (2021-09-06)
+
+
+### Fix
+
+* publish workflow fixes ([22d2bb1](https://github.com/tuteco/jupyter_datascience_pyspark/commit/22d2bb12160aa9ce8564b122ebca0f5d35cd0353))
+
 # [1.1.0](https://github.com/tuteco/jupyter_datascience_pyspark/compare/v1.0.0...v1.1.0) (2021-09-06)
 
 
