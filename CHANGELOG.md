@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/tuteco/jupyter_datascience_pyspark/compare/v1.1.3...v1.1.4) (2021-09-06)
+
+
+### Fix
+
+* updated workflow trigger for tags ([3e2854c](https://github.com/tuteco/jupyter_datascience_pyspark/commit/3e2854cc6d6836b0bffe7906cb9ed027c49c18e3))
+
 ## [1.1.3](https://github.com/tuteco/jupyter_datascience_pyspark/compare/v1.1.2...v1.1.3) (2021-09-06)
 
 
