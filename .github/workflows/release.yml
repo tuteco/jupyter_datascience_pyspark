@@ -1,10 +1,10 @@
-name: CI to Docker Hub
+name: create next release
 on:
-  pull_request:
+  push:
     branches:
       - release
 jobs:
-  build:
+  release:
     runs-on: ubuntu-latest
     steps:
 
@@ -15,16 +15,16 @@ jobs:
         id: semantic
         uses: cycjimmy/semantic-release-action@v2
         with:
+          semantic_version: 16
           extra_plugins: |
-            @semantic-release/git
-            @semantic-release/github
             @semantic-release/changelog
+            @semantic-release/git
+            conventional-changelog-eslint
+          branches: |
+            ['release']
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
       - name: release digest
         if: steps.semantic.outputs.new_release_published == 'true'
         run: echo ${{ steps.semantic.outputs.new_release_version }}
-
-      - name: Image digest
-        run: echo ${{ steps.docker_build.outputs.digest }}
