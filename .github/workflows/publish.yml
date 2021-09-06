@@ -1,7 +1,8 @@
 name: CI to Docker Hub
 on:
-  push:
-    branches: [ main ]
+  pull_request:
+    branches:
+      - main
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -9,6 +10,17 @@ jobs:
 
       - name: Check Out Repo
         uses: actions/checkout@v2
+
+      - name: Semantic Release
+        id: semantic
+        uses: cycjimmy/semantic-release-action@v2
+        with:
+          extra_plugins: |
+            @semantic-release/git
+            @semantic-release/github
+            @semantic-release/changelog
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
       - name: Login to Docker Hub
         uses: docker/login-action@v1
@@ -35,20 +47,11 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: tuteco/jupyter_datascience_pyspark:latest
+          tags:
+            - tuteco/jupyter_datascience_pyspark:latest
+            - tuteco/jupyter_datascience_pyspark:${{ steps.semantic.outputs.new_release_version }}
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache-new
-
-      - name: Semantic Release
-        id: semantic
-        uses: cycjimmy/semantic-release-action@v2
-        with:
-          extra_plugins: |
-            @semantic-release/git
-            @semantic-release/github
-            @semantic-release/changelog
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
       - name: release digest
         if: steps.semantic.outputs.new_release_published == 'true'
