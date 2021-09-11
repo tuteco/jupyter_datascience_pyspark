@@ -1,3 +1,10 @@
+## [1.2.0](https://github.com/tuteco/jupyter_datascience_pyspark/compare/v1.1.4...v1.2.0) (2021-09-11)
+
+
+### Features
+
+* added openpyxl [#2](https://github.com/tuteco/jupyter_datascience_pyspark/issues/2) ([9a2affd](https://github.com/tuteco/jupyter_datascience_pyspark/commit/9a2affded8df14294678b44832e873d5847c22c6))
+
 ## [1.1.4](https://github.com/tuteco/jupyter_datascience_pyspark/compare/v1.1.3...v1.1.4) (2021-09-06)
 
 
