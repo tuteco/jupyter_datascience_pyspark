@@ -1,3 +1,11 @@
+## [1.3.0](https://github.com/tuteco/jupyter_datascience_pyspark/compare/v1.2.0...v1.3.0) (2021-11-10)
+
+
+### Features
+
+* added plotnine, close [#24](https://github.com/tuteco/jupyter_datascience_pyspark/issues/24) ([eab9f28](https://github.com/tuteco/jupyter_datascience_pyspark/commit/eab9f287a43e8e8cbab8ec95c7a3407c6a356104))
+* Jupyter lab 3.2.2 and packages updated ([bb37a8f](https://github.com/tuteco/jupyter_datascience_pyspark/commit/bb37a8f357ff1fb24b6f345ecd0647a30a01cbc2))
+
 ## [1.2.0](https://github.com/tuteco/jupyter_datascience_pyspark/compare/v1.1.4...v1.2.0) (2021-09-11)
 
 
