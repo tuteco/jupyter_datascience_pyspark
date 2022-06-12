@@ -1,4 +1,4 @@
-FROM jupyter/pyspark-notebook
+FROM jupyter/pyspark-notebook:latest
 
 ARG NB_USER="jovyan"
 ARG NB_UID="1000"
@@ -8,9 +8,14 @@ ARG NB_GID="100"
 USER root
 
 RUN apt-get update && apt-get install -y --no-install-recommends --yes \
-    awscli \
+    curl \
+    wget\
     jq \
     && rm -rf /var/lib/apt/lists/*
+
+RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" && \
+    unzip awscliv2.zip && \
+    ./aws/install
 
 # swith back to jovyan user
 USER ${NB_UID}
