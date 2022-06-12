@@ -35,6 +35,7 @@ including some instructional examples.
 - [Chart Editor](https://github.com/plotly/jupyterlab-chart-editor) - easy work with plotly charts
   - jupyterlab-plotly - required for chart editor to work
 - [ipython-sql](https://github.com/catherinedevlin/ipython-sql)  -run sql directly in a notebook cell
+- [Interactive Tables](https://mwouts.github.io/itables/quick_start.html)
 
 ## Image local build
 we use [python invoke](https://www.pyinvoke.org) instead of unix make. 
