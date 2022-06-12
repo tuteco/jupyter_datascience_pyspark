@@ -1,3 +1,15 @@
+## [1.4.0](https://github.com/tuteco/jupyter_datascience_pyspark/compare/v1.3.0...v1.4.0) (2022-06-12)
+
+
+### Features
+
+* bumped to new versions:python, jupyter lab, aws ([84c65ab](https://github.com/tuteco/jupyter_datascience_pyspark/commit/84c65ab9e3553313426e78abd8c266c678509a3d))
+
+
+### Bug Fixes
+
+* update CI workflow to new versions ([f49b1ea](https://github.com/tuteco/jupyter_datascience_pyspark/commit/f49b1ea913ca6a53d0ce3cb16a2df0cd4df14726))
+
 ## [1.3.0](https://github.com/tuteco/jupyter_datascience_pyspark/compare/v1.2.0...v1.3.0) (2021-11-10)
 
 
