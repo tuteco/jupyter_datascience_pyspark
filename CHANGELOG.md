@@ -1,3 +1,10 @@
+## [1.5.0](https://github.com/tuteco/jupyter_datascience_pyspark/compare/v1.4.0...v1.5.0) (2022-12-07)
+
+
+### Features
+
+* bumped requirements to latest versions ([b4f6d3c](https://github.com/tuteco/jupyter_datascience_pyspark/commit/b4f6d3c9ba7ebdb39993e889b5f8cc6e0a6d8559))
+
 ## [1.4.0](https://github.com/tuteco/jupyter_datascience_pyspark/compare/v1.3.0...v1.4.0) (2022-06-12)
 
 
